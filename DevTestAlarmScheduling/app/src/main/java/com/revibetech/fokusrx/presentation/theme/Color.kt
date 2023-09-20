@@ -1,4 +1,4 @@
-package com.example.devTestAlarmScheduling.presentation.theme
+package com.revibetech.fokusrx.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 import androidx.wear.compose.material.Colors

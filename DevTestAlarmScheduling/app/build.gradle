@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.devTestAlarmScheduling'
+    namespace 'com.revibetech.fokusrx'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.devTestAlarmScheduling"
+        applicationId "com.revibetech.fokusrx"
         minSdk 30
         targetSdk 33
         versionCode 1

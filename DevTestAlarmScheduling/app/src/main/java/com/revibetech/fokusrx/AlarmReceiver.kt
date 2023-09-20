@@ -1,4 +1,4 @@
-package com.example.devTestAlarmScheduling
+package com.revibetech.fokusrx
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -47,7 +47,7 @@ class AlarmReceiver : BroadcastReceiver() {
                 val simpleDateFormatEastUs = SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US)
                 val triggerAtDateTime = simpleDateFormatEastUs.format(triggerAtMilliseconds)
                 Log.d(
-                    "${TAG}.startAlert()",
+                    "$TAG.startAlert()",
                     "AlarmScheduledForDateTime: $triggerAtDateTime"
                 )
             } catch (e: Exception) {

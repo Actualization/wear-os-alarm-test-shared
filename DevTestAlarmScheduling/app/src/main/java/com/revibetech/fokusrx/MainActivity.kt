@@ -4,12 +4,8 @@
  * changes to the libraries and their usages.
  */
 
-package com.example.devTestAlarmScheduling
+package com.revibetech.fokusrx
 
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -30,10 +26,9 @@ import androidx.compose.ui.unit.dp
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
-import com.example.devTestAlarmScheduling.R
-import com.example.devTestAlarmScheduling.presentation.theme.DevTestAlarmSchedulingTheme
+import com.revibetech.fokusrx.presentation.theme.FokusRxTheme
 import androidx.compose.ui.platform.LocalContext
-import androidx.core.app.ActivityCompat.startActivityForResult
+import com.revibetech.fokusrx.R
 
 
 class MainActivity : ComponentActivity() {
@@ -66,7 +61,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun WearApp(greetingName: String) {
-    DevTestAlarmSchedulingTheme {
+    FokusRxTheme {
         /* If you have enough items in your list, use [ScalingLazyColumn] which is an optimized
          * version of LazyColumn for wear devices with some added features. For more information,
          * see d.android.com/wear/compose.
@@ -99,7 +94,8 @@ fun StartAlarmsButton() {
     Button(
         onClick = {
             Log.d("ALARM_START_CLICKED", "Current time in milliseconds: " + System.currentTimeMillis())
-            AlarmReceiver.startAlert(context) },
+            AlarmReceiver.startAlert(context)
+        },
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp)

@@ -1,10 +1,10 @@
-package com.example.devTestAlarmScheduling.presentation.theme
+package com.revibetech.fokusrx.presentation.theme
 
 import androidx.compose.runtime.Composable
 import androidx.wear.compose.material.MaterialTheme
 
 @Composable
-fun DevTestAlarmSchedulingTheme(
+fun FokusRxTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
